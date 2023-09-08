@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="loginpage.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="logo">
+       <img src="yelpL.png" alt="Yelp Logo">
+    </div>
+    <hr>
+   <div class="container">
+       <div class="login">
+         <h2>Log in to Yelp</h2>
+         <h3>New to Yelp? <a href="signup.html">Sign up</a></h3>
+         <p>By continuing, you agree to Yelp’s <a href="#">Terms of Service</a> and acknowledge Yelp’s <a href="#">Privacy Policy</a>.</p>
+         <button class="facebook"><i class="fab fa-facebook"></i> Continue with Facebook</button>
+         <button class="google"><i class="fab fa-google"></i> Continue with Google</button>
+         <button class="apple"><i class="fab fa-apple"></i> Continue with Apple</button>
+         <p class="or">OR</p>
+         <input type="email" name="email" id="email" placeholder="Email" required>
+         <span id="emailError" class="error"></span>
+         <!-- <span class="icon1 fas fa-exclamation"></span>
+         <span class="icon2 fas fa-check"></span> -->
+         <input type="password" name="password" id="password" placeholder="Password" required>
+         <a href="#" class="forgot">Forgot password?</a>
+         <button class="login-btn" onclick="validateForm()">Log In</button>
+      </div>
+      <div class="sideimage">
+        <img src="sideimg.png" alt="">
+      </div>
+   </div>
+
+   <footer>
+    <div class="">
+        
+            <div class="col-md-4">
+                <h4>About Us</h4>
+                <ul>
+                <li>About Yelp</li>
+                <li>Press</li>
+                <li>Investor Relations</li>
+                <li>Trust & Safety</li>
+                <li>Content Guidelines</li>
+                <li>Accessibility Statement</li>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>Ad Choices</li>
+                <li>Your Privacy Choices</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Discover</h4>
+                <ul>
+                    
+                    <li>Yelp Project Cost Guides</li>
+                    <li>Collections</li>
+                    <li>Talk</li>
+                    <li>Events</li>
+                    <li>Yelp Blog</li>
+                    <li>Support</li>
+                    <li>Yelp Mobile</li>
+                    <li>RSS</li>
+                
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Yelp for Business</h4>
+                <ul>
+                    
+                    <li>Yelp for Business</li>
+                    <li>Business Owner Login</li>
+                    <li>Claim your Business Page</li>
+                    <li>Advertise on Yelp</li>
+                    <li>Yelp for Restaurant Owners</li>
+                    <li>Table Management</li>
+                    <li>Business Success Stories</li>
+                    <li>Business Support</li>
+                    <li>Ad Choices</li>
+                    <li>Yelp Blog for Business</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Languages</h3>
+                <div class="dropdown">
+                    <select id="language-select">
+                      <option value="" disabled selected>Urdu</option>
+                      <option value="english">English</option>
+                      <option value="spanish">Spanish</option>
+                      <option value="french">French</option>
+                      <option value="german">German</option>
+                    </select>
+                </ul>
+                </div>
+                <h3 id="country">Country</h3>
+                <div class="dropdown">
+                    <select id="language-select">
+                      <option value="" disabled selected>Pakistan</option>
+                      <option value="english">Japan</option>
+                      <option value="spanish">Thailand</option>
+                      <option value="french">Autralia</option>
+                      <option value="german">Germany</option>
+                    </select>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <p>Copyright © 2004–2023 Yelp Inc. Yelp,<img src="R.png" alt="Logo" width="40" height="40"> Yelp burst and related marks are registered trademarks of Yelp.</p>
+            </div>
+        </div>
+</footer>
+   <script>
+    function validateForm() {
+        var emailInput = document.getElementById("email");
+        var emailError = document.getElementById("emailError");
+        var email = emailInput.value;
+
+        // Email validation regular expression
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(email)) {
+      
+            emailInput.style.borderColor= "red";
+            emailError.innerText = "Please enter a valid email address";
+            emailInput.classList.add("error");
+            return false;
+        } else {
+            emailInput.style.borderColor= "green"
+            emailError.innerText = "";
+            emailInput.classList.remove("error");
+            return true;
+        }
+    }
+   </script>
+</body>
+</html>

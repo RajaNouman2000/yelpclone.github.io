@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Raja Nouman</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+<div id="login-signup-message"></div>
+
+
+    <logo class="logo"><img src="nlogo.png" alt="Yamp"></logo>
+    <header>
+        <div class="search">
+            <input type="text" placeholder="tacos,cheap dinner, Max's">
+            <input type="text" placeholder="|    San Francisco, CA">
+            <button class="ssubmit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+        </div>
+        <button class="signup"><a href="signup.html">Sign Up</a></button>
+        <button class="login"><a href="loginpage.html">Log In</a></button>
+        <button class="n1">Write a Review</button>
+        <button class="n1">Yelp for Business</button>
+
+        <nav>
+            <ul>
+                <li><a href="#">menu 1</a>
+                    <ul>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Delivery</a></li>
+                        <li><i class="fa-solid fa-calendar-days" style="color: #000000;"></i><a href="#">Reservation</a>
+                        </li>
+                        <li><i class="fa-solid fa-burger" style="color: #000000;"></i><a href="#">Burgers</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Japanese</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Chinese</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Mexican</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Italian</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Thai</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">menu 2</a>
+                    <ul>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Contractors</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Landscaping</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Electricians</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Locksmiths</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Home Cleaners</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Movers</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">HVAC</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Plumbers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">menu 3</a>
+                    <ul>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Auto Repair</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Car Dealers</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Auto Detailing</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Oil Change</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Body shops</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Parking</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Car Wash</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Towing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">menu 4</a>
+                    <ul>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Dry Cleaning</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Hair Salons</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Phone Repair</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Gyms</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Bars</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Massage</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Nightlife</a></li>
+                        <li><i class="fa-solid fa-truck" style="color: #000000;"></i><a href="#">Shopping</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <div class="headig"> 
+        <h2>Make a splash</h2>
+        <button class="ssubmit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> Pool Service</button>
+    </div>
+    <div class="main">
+        <div>
+            <h2> Recent Activity</h2>
+        </div>
+        <div class="activity">
+            <img src="profile.jpg" alt="err">
+            <h3>Joy Z.</h3>
+            <h4>Added 2 photos</h4>
+            <p>Highwire Coffe Roasters</p>
+            <div class="ainbox">
+                <div class="inimg">
+                    <img src="insideimg1.jpg" alt="">
+                </div>
+
+                <div class="aicons">
+                    <img src="thumbsup.png" alt="">
+                </div>
+            </div>
+            <div class="ainbox">
+                <div class="inimg">
+                    <img src="insideimg2.jpg" alt="">
+                </div>
+                <div class="aicons">
+                    <img src="thumbsup.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="activity">
+            <img src="profile.jpg" alt="err">
+            <h3>Joy Z.</h3>
+            <h4>Wrote a Review</h4>
+            <div class="second"><img src="coffe roaster.jpg" alt=""></div>
+            <p>Highwire Coffe Roasters</p>
+            <div class="stars"><img src="5stars.png" alt=""></div>
+            <div class="extender">
+                <p>The seasonal Matcha Mint Latte with Oat Milk was pretty good, would get again. The...</p>
+            </div>
+            <a href="#">Continue Reading</a>
+            <hr>
+            <div class="emoji">
+                <img src="bulbimoji.png" alt="">
+                <img src="funnyimoji.png" alt="">
+                <img src="coolimoji.png" alt="">
+            </div>
+        </div>
+
+        <div class="activity">
+            <img src="profile.jpg" alt="err">
+            <h3>Joy Z.</h3>
+            <h4>Wrote a Review</h4>
+            <div class="second"><img src="coffe roaster.jpg" alt=""></div>
+            <p>Highwire Coffe Roasters</p>
+            <div class="stars"><img src="5stars.png" alt=""></div>
+            <div class="extender">
+                <p>The seasonal Matcha Mint Latte with Oat Milk was pretty good, would get again. The...</p>
+            </div>
+            <a href="#">Continue Reading</a>
+            <hr>
+            <div class="emoji">
+                <img src="bulbimoji.png" alt="">
+                <img src="funnyimoji.png" alt="">
+                <img src="coolimoji.png" alt="">
+            </div>
+        </div>
+
+        <div class="activity">
+            <img src="profile.jpg" alt="err">
+            <h3>Joy Z.</h3>
+            <h4>Added 2 photos</h4>
+            <p>Highwire Coffe Roasters</p>
+            <div class="ainbox">
+                <div class="inimg">
+                    <img src="insideimg1.jpg" alt="">
+                </div>
+
+                <div class="aicons">
+                    <img src="thumbsup.png" alt="">
+                </div>
+            </div>
+            <div class="ainbox">
+                <div class="inimg">
+                    <img src="insideimg2.jpg" alt="">
+                </div>
+                <div class="aicons">
+                    <img src="thumbsup.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="activity">
+            <img src="profile.jpg" alt="err">
+            <h3>Joy Z.</h3>
+            <h4>Wrote a Review</h4>
+            <div class="second"><img src="coffe roaster.jpg" alt=""></div>
+            <p>Highwire Coffe Roasters</p>
+            <div class="stars"><img src="5stars.png" alt=""></div>
+            <div class="extender">
+                <p>The seasonal Matcha Mint Latte with Oat Milk was pretty good, would get again. The...</p>
+            </div>
+            <a href="#">Continue Reading</a>
+            <hr>
+            <div class="emoji">
+                <img src="bulbimoji.png" alt="">
+                <img src="funnyimoji.png" alt="">
+                <img src="coolimoji.png" alt="">
+            </div>
+        </div>
+        <div class="activity">
+            <img src="profile.jpg" alt="err">
+            <h3>Joy Z.</h3>
+            <h4>Wrote a Review</h4>
+            <div class="second"><img src="coffe roaster.jpg" alt=""></div>
+            <p>Highwire Coffe Roasters</p>
+            <div class="stars"><img src="5stars.png" alt=""></div>
+            <div class="extender">
+                <p>The seasonal Matcha Mint Latte with Oat Milk was pretty good, would get again. The...</p>
+            </div>
+            <a href="#">Continue Reading</a>
+            <hr>
+            <div class="emoji">
+                <img src="bulbimoji.png" alt="">
+                <img src="funnyimoji.png" alt="">
+                <img src="coolimoji.png" alt="">
+            </div>
+        </div>  
+        <div class="activity">
+            <img src="profile.jpg" alt="err">
+            <h3>Joy Z.</h3>
+            <h4>Added 2 photos</h4>
+            <p>Highwire Coffe Roasters</p>
+            <div class="ainbox">
+                <div class="inimg">
+                    <img src="insideimg1.jpg" alt="">
+                </div>
+
+                <div class="aicons">
+                    <img src="thumbsup.png" alt="">
+                </div>
+            </div>
+            <div class="ainbox">
+                <div class="inimg">
+                    <img src="insideimg2.jpg" alt="">
+                </div>
+                <div class="aicons">
+                    <img src="thumbsup.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="activity">
+            <img src="profile.jpg" alt="err">
+            <h3>Joy Z.</h3>
+            <h4>Wrote a Review</h4>
+            <div class="second"><img src="coffe roaster.jpg" alt=""></div>
+            <p>Highwire Coffe Roasters</p>
+            <div class="stars"><img src="5stars.png" alt=""></div>
+            <div class="extender">
+                <p>The seasonal Matcha Mint Latte with Oat Milk was pretty good, would get again. The...</p>
+            </div>
+            <a href="#">Continue Reading</a>
+            <hr>
+            <div class="emoji">
+                <img src="bulbimoji.png" alt="">
+                <img src="funnyimoji.png" alt="">
+                <img src="coolimoji.png" alt="">
+            </div>
+        </div>
+        <div class="activity">
+            <img src="profile.jpg" alt="err">
+            <h3>Joy Z.</h3>
+            <h4>Wrote a Review</h4>
+            <div class="second"><img src="coffe roaster.jpg" alt=""></div>
+            <p>Highwire Coffe Roasters</p>
+            <div class="stars"><img src="5stars.png" alt=""></div>
+            <div class="extender">
+                <p>The seasonal Matcha Mint Latte with Oat Milk was pretty good, would get again. The...</p>
+            </div>
+            <a href="#">Continue Reading</a>
+            <hr>
+            <div class="emoji">
+                <img src="bulbimoji.png" alt="">
+                <img src="funnyimoji.png" alt="">
+                <img src="coolimoji.png" alt="">
+            </div>
+        </div>
+
+        <div class="activity">
+            <img src="profile.jpg" alt="err">
+            <h3>Joy Z.</h3>
+            <h4>Added 2 photos</h4>
+            <p>Highwire Coffe Roasters</p>
+            <div class="ainbox">
+                <div class="inimg">
+                    <img src="insideimg1.jpg" alt="">
+                </div>
+
+                <div class="aicons">
+                    <img src="thumbsup.png" alt="">
+                </div>
+            </div>
+            <div class="ainbox">
+                <div class="inimg">
+                    <img src="insideimg2.jpg" alt="">
+                </div>
+                <div class="aicons">
+                    <img src="thumbsup.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="activity">
+            <img src="profile.jpg" alt="err">
+            <h3>Joy Z.</h3>
+            <h4>Wrote a Review</h4>
+            <div class="second"><img src="coffe roaster.jpg" alt=""></div>
+            <p>Highwire Coffe Roasters</p>
+            <div class="stars"><img src="5stars.png" alt=""></div>
+            <div class="extender">
+                <p>The seasonal Matcha Mint Latte with Oat Milk was pretty good, would get again. The...</p>
+            </div>
+            <a href="#">Continue Reading</a>
+            <hr>
+            <div class="emoji">
+                <img src="bulbimoji.png" alt="">
+                <img src="funnyimoji.png" alt="">
+                <img src="coolimoji.png" alt="">
+            </div>
+        </div>
+        <div class="activity">
+            <img src="profile.jpg" alt="err">
+            <h3>Joy Z.</h3>
+            <h4>Wrote a Review</h4>
+            <div class="second"><img src="coffe roaster.jpg" alt=""></div>
+            <p>Highwire Coffe Roasters</p>
+            <div class="stars"><img src="5stars.png" alt=""></div>
+            <div class="extender">
+                <p>The seasonal Matcha Mint Latte with Oat Milk was pretty good, would get again. The...</p>
+            </div>
+            <a href="#">Continue Reading</a>
+            <hr>
+            <div class="emoji">
+                <img src="bulbimoji.png" alt="">
+                <img src="funnyimoji.png" alt="">
+                <img src="coolimoji.png" alt="">
+            </div>
+        </div>  
+        
+    </div>
+    <div class="showmore">
+    <a href="#">Show more activity <span>&#8635;</span></a> 
+</div>
+    <div class="Categories">
+     <hr>
+<h2>Categories</h2>
+       <div class="box" ><img src="1.svg" alt=""> <p>Nightlife</p></div>
+       <div class="box box2"><img src="2.svg" alt=""> <p>Active Life</p></div>
+       <div class="box box3"><img src="3.svg" alt=""> <p>Shopping</p></div>
+       <div class="box box4"><img src="4.svg" alt=""> <p>Restaurants</p></div>
+       <div class="box box5"><img src="5.svg" alt=""> <p>More</p></div>
+       <div class="box box6"><img src="6.svg" alt=""> <p>Home Services</p></div>
+       <div class="box box7"><img src="7.svg" alt=""> <p>Beauty & Spas</p></div>
+       <div class="box box8"><img src="8.svg" alt=""> <p>Automative</p></div>
+    </div>
+
+    <footer>
+        <div class="container">
+            
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <ul>
+                    <li>About Yelp</li>
+                    <li>Press</li>
+                    <li>Investor Relations</li>
+                    <li>Trust & Safety</li>
+                    <li>Content Guidelines</li>
+                    <li>Accessibility Statement</li>
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                    <li>Ad Choices</li>
+                    <li>Your Privacy Choices</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Discover</h4>
+                    <ul>
+                        
+                        <li>Yelp Project Cost Guides</li>
+                        <li>Collections</li>
+                        <li>Talk</li>
+                        <li>Events</li>
+                        <li>Yelp Blog</li>
+                        <li>Support</li>
+                        <li>Yelp Mobile</li>
+                        <li>RSS</li>
+                    
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Yelp for Business</h4>
+                    <ul>
+                        
+                        <li>Yelp for Business</li>
+                        <li>Business Owner Login</li>
+                        <li>Claim your Business Page</li>
+                        <li>Advertise on Yelp</li>
+                        <li>Yelp for Restaurant Owners</li>
+                        <li>Table Management</li>
+                        <li>Business Success Stories</li>
+                        <li>Business Support</li>
+                        <li>Ad Choices</li>
+                        <li>Yelp Blog for Business</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Languages</h3>
+                    <div class="dropdown">
+                        <select id="language-select">
+                          <option value="" disabled selected>Urdu</option>
+                          <option value="english">English</option>
+                          <option value="spanish">Spanish</option>
+                          <option value="french">French</option>
+                          <option value="german">German</option>
+                        </select>
+                    </ul>
+                    </div>
+                    <h3 id="country">Country</h3>
+                    <div class="dropdown">
+                        <select id="language-select">
+                          <option value="" disabled selected>Pakistan</option>
+                          <option value="english">Japan</option>
+                          <option value="spanish">Thailand</option>
+                          <option value="french">Autralia</option>
+                          <option value="german">Germany</option>
+                        </select>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <p>Copyright © 2004–2023 Yelp Inc. Yelp,<img src="R.png" alt="Logo" width="40" height="40"> Yelp burst and related marks are registered trademarks of Yelp.</p>
+                </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
